@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="app.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Tic-Tac-Toe</title>
+  </head>
+  <body>
+    <h1>Tic-Tac-Toe</h1>
+    <!-- <div class="playerName"> -->
+      <form id="name-input">
+        <input placeholder="Player 1" id="p1"></input>
+        <input placeholder="Player 2" id="p2"></input>
+        <button type="submit">Submit</button>
+      </form>
+    <!-- </div> -->
+    <div class="pnames"> 
+      <label>X's : </label>
+      <div id="player1name"></div>
+      <label>O's : </label>
+      <div id="player2name"></div>
+    </div>
+    <button class="namereset">Reset Names</button>
+    <div class="board" id="board">
+        <div class="cell" id="00"><span></span></div>
+        <div class="cell" id="01"><span></span></div>
+        <div class="cell" id="02"><span></span></div>
+        <div class="cell" id="10"><span></span></div>
+        <div class="cell" id="11"><span></span></div>
+        <div class="cell" id="12"><span></span></div>
+        <div class="cell" id="20"><span></span></div>
+        <div class="cell" id="21"><span></span></div>
+        <div class="cell" id="22"><span></span></div>
+    </div>
+    <section class="gameOver">
+      <h3 id="winner"></h3>
+      <button id="playAgainButton">Play Again</button>
+    </section>
+  </body>
+</html>
