@@ -1,5 +1,4 @@
 let input = document.querySelector("#name-input");
-// let grid = document.querySelector("#grid");
 const board = document.querySelector("#board");
 const playAgain = document.querySelector("#playAgainButton");
 const winner = document.querySelector("#winner");
@@ -52,13 +51,6 @@ playAgain.addEventListener("click", function (e) {
     winner.innerText = "";
     renderBoard();
 });
-
-// let cell = document.createElement("div");
-// cell.classList.add("cell");
-// cell.id = `1`;
-// board.appendChild(cell);
-
-// const gridSize = 3;
   
 function switchPlayers() {
   if (gameState.currentPlayer === "X") {
@@ -106,14 +98,6 @@ function checkDraw(){
   }
   return true;
 }
-// function takeTurn() {
-//   renderBoard();
-//   switchPlayers();
-// }
-  
-// grid.addEventListener("click", function (event) {
-//     console.log(event.target.id);
-// });
 
 function storeRow0() {
   let arr = gameState.board[0];
